@@ -3,34 +3,48 @@ package com.bitcamp.domains;
 public class AccountBean {
 	private String accountnum, today, money;
 	
-	public void setAccountNum(String accountnum) {
+
+	public String getAccountnum() {
+		return accountnum;
+	}
+
+
+	public void setAccountnum(String accountnum) {
 		this.accountnum = accountnum;
 	}
 
-	public String getAccountNum() {
-		return accountnum;
-	}
-	
-	public void setToday(String today) {
-		this.today = today;
-	}
+
 
 	public String getToday() {
 		return today;
 	}
-	
-	public void setMoney(String money) {
-		this.money = money;
+
+
+
+	public void setToday(String today) {
+		this.today = today;
 	}
+
 
 	public String getMoney() {
 		return money;
 	}
 
-	@Override
-	public String toString() {
-		// 관리자 : 사번(1234)
-		return String.format("", accountnum, today, money);
+
+	public void setMoney(String money) {
+		this.money = money;
 	}
 
-}
+
+	@Override
+	public String toString() {
+		return "회원 [accountnum=" + accountnum + ", today=" + today + ", money=" + money + "]";
+	}
+	
+	
+
+
+	
+	}
+
+

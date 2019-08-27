@@ -1,6 +1,6 @@
 package com.bitcamp.domains;
 
-public class AdminBean {
+public class AdminBean extends MemberBean{
 	private String sabun;
 
 	public void setSabun(String sabun) {
@@ -13,7 +13,7 @@ public class AdminBean {
 
 	@Override
 	public String toString() {
-		// 관리자 : 사번(1234)
-		return String.format("", sabun);
+		return "사원정보 [id=" + getId() + ", 비번=" + getPass() + "주민번호"
+ 				+ getSsn() + "신용도=" + sabun + "]";
 	}
 }

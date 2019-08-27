@@ -1,6 +1,6 @@
 package com.bitcamp.domains;
 
-public class CustomerBean {
+public class CustomerBean extends MemberBean {
 	private String credit;
 	
 	public void setCredit(String credit) {
@@ -10,11 +10,14 @@ public class CustomerBean {
 	public String getCredit() {
 		return credit;
 	}
-	
+
 	@Override
 	public String toString() {
-		// 고객: 신용도 1등급
-		return String.format("", credit);
+		return "고객정보 [id=" + getId() + ", 비번=" + getPass() + "주민번호"
+ 				+ getSsn() + "신용도=" + credit + "]";
+	}
+	
+	
 	}
 
-}
+
